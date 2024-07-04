@@ -1,0 +1,31 @@
+.navbar {
+  width: 100%;
+  top: 0;
+  position: sticky;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: hsl(0, 100%, 60%, 50%);
+  opacity: 1;
+  /* display: none; */
+  transform: scale(1.1);
+  box-shadow: 0 0 20px hsl(0, 100%, 60%, 50%);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.navbar_item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: 1vw;
+}
+
+.navbar_list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  /* margin-right: -20vw; */
+  /*  */
+}

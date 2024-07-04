@@ -1,0 +1,70 @@
+*,
+::before,
+::after {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+body {
+  /* box-sizing: content-box; */
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 90%;
+  display: inline-block;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: center;
+  background-color: hsl(0, 100%, 50%, 60%);
+  color: white;
+}
+
+input {
+  display: inline-block;
+  font-family: inherit;
+  text-align: center;
+}
+
+button {
+  border: none;
+  padding: 3px 9px;
+  border-radius: 3px;
+  transition: transform 0.25s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: transform 0.25s;
+}
+
+a {
+  color: black;
+  transform: scale(1);
+  transition: transform 0.5s, box-shadow 0.5s;
+  text-decoration: none;
+}
+
+a:hover {
+  transform: scale(1.15);
+  color: white;
+  transition: transform 0.5s;
+}

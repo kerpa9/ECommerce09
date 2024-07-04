@@ -1,0 +1,11 @@
+.containerPurchases {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  margin: 0 0 0 50px;
+  gap: 10px;
+}

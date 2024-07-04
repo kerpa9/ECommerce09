@@ -1,0 +1,21 @@
+.prodsimilar {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.prodsimilar_prod {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0px 0 0 0;
+}
+
+.prodsimilar_title {
+  padding-left: 10px;
+}

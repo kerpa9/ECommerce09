@@ -1,0 +1,119 @@
+.homepage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.homepage > button {
+  margin-left: auto;
+  margin-right: 20px;
+  display: none;
+}
+
+.homepage_container {
+  padding: 20px 20px 20px 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.homepage_filters {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  padding: 1vw;
+  margin: 0 65px 0 1px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.homepage_findbtnx {
+  margin-top: -50px;
+  align-self: self-end;
+  display: none;
+}
+
+.homepage_findbtn > svg {
+  width: 20px;
+  height: 20px;
+}
+
+.homepage_send {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  margin-left: -5vw;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.homepage_inp {
+  width: 90%;
+  height: 30px;
+  border-radius: 12px;
+}
+
+@media (width<850px) {
+  .homepage > button {
+    display: inline-block;
+  }
+
+  .homepage > button.active {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .homepage_filters {
+    width: 35%;
+    height: 60%;
+    background-color: hsl(0, 100%, 60%, 15%);
+    border: thin solid black;
+    border-radius: 15px;
+    left: 100%;
+    transition: left 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  button {
+    border: none;
+    text-align: center;
+  }
+
+  button > svg {
+    padding: auto;
+    width: 20px;
+    height: 20px;
+  }
+
+  .homepage_filters.active {
+    height: 60%;
+    left: 60%;
+    transition: left 0.5s;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .homepage_findbtnx:first-child {
+    margin: 0 20px;
+    display: block;
+  }
+
+  .homepage_container {
+    padding: 20px;
+  }
+}

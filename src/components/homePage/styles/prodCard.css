@@ -1,0 +1,71 @@
+.prodcard {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prodcard_div {
+  width: 90%;
+}
+
+.prodcard_img {
+  cursor: pointer;
+  width: 90%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prodcard_img2 {
+  position: absolute;
+  padding: 8px;
+  display: none;
+}
+
+.prodcard_img:hover .prodcard_img2 {
+  opacity: 1;
+  display: inline-block;
+}
+
+.prodcard_item {
+  padding: 5px;
+}
+
+.prodcard_img:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+.prodcard_buttons {
+  padding-bottom: 20px;
+  display: flex;
+  position: none;
+  gap: 20px;
+}
+
+.prodcard_btnAdd {
+  background-color: hsl(0, 100%, 50%, 60%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  aspect-ratio: 1;
+}
+
+.prodcard_btnAdd > svg {
+  width: 30px;
+  height: 20px;
+}
+
+.prodcard_btnAdd > svg:hover {
+  transform: scale(1.05);
+  transition: transform 0.8s;
+}
