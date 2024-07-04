@@ -1,4 +1,3 @@
-import "react-multi-carousel/lib/styles.css";
 import "./styles/prodDetail.css";
 
 const ProdDetail = ({ product }) => {
